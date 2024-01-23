@@ -1,0 +1,53 @@
+@font-face {
+    font-family: quicksand;
+    src: url(fonts/quicksand.ttf);
+}
+
+:root {
+    --base-colour: #0881A3;
+    font-family: quicksand, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+   margin: 0;
+   padding: 0px;
+   border: 1px red solid;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.leftpanel {
+    background-image: url('images/trees.jpg');
+    background-position: center;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.leftpanel a{
+    color: #fff;
+}
+
+.logo {
+    height: 1.2em;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.leftpanel h1 {
+    text-align: center;
+    line-height: 1;
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: rgba(70,70,70,70%);
+}
+
+.credit {
+    justify-self: flex-end;
+}
