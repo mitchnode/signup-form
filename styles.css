@@ -5,13 +5,16 @@
 
 :root {
     --base-colour: #0881A3;
+    --bg-colour: #BBBBBB;
+    --fg-colour: #FEFEFE;
+    --shadow: rgba(70,70,70,70%);
     font-family: quicksand, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {
    margin: 0;
    padding: 0px;
-   border: 1px red solid;
+   
 }
 
 .container {
@@ -25,13 +28,25 @@
     width: 40vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
-    color: #fff;
+    color: var(--bg-colour);
+}
+
+.topleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 50vh;
+}
+
+.bottomleft {
+    display: flex;
+    flex-direction: column;
 }
 
 .leftpanel a{
-    color: #fff;
+    color: var(--fg-colour);
 }
 
 .logo {
@@ -40,14 +55,54 @@
     padding-right: 5px;
 }
 
-.leftpanel h1 {
+.title {
     text-align: center;
-    line-height: 1;
-    font-size: 2.5rem;
-    color: #fff;
-    background-color: rgba(70,70,70,70%);
+    
+    font-size: 1.6rem;
+    color: var(--fg-colour);
+    background-color: var(--shadow);
+    height: 10vh;
+}
+
+.title h1 {
+    height: 1.2em;
+    margin-top: 2.5vh;
+    line-height: 1.5;
 }
 
 .credit {
     justify-self: flex-end;
+}
+
+.rightpanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--bg-colour);
+}
+.top {
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+
+.middle {
+    box-shadow: 0px 0px 10px 0px var(--shadow);
+    height: 20rem;
+    background-color: var(--fg-colour);
+    padding: 2rem 1rem;
+    flex-grow: 0;
+
+}
+
+.rightpanel button {
+    width: 6rem;
+    margin: 2rem 1rem 0;
+}
+
+.rightpanel p {
+    margin: 2rem 1rem;
+}
+
+.bottom {
+    flex-grow: 1;
 }
