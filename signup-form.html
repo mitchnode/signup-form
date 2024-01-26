@@ -11,7 +11,8 @@
         <div class="leftpanel">
             <div class="topleft">
                 <div class="title">
-                    <h1><img class="logo" src="images/logo.png" alt="Logo">MITCHNODE</h1>
+                    <img class="logo" src="images/logo.png" alt="Logo">
+                    <h1>MITCHNODE</h1>
                 </div>
             </div>
             <div class="bottomleft">
@@ -19,33 +20,48 @@
             </div>
         </div>
         <div class="rightpanel">
-            <p class="top">This is not a real online service! You know you need something 
-                like this in your life to help you realize your deepest dreams.
-                Sign up now to get started.</p>
+            <div class="top">
+                <p>This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
             
             <div class="middle">
-                <h3>Let's do this!</h3>
+                <h4>Let's do this!</h4>
                 <form action="" method="post">
                     
                     <div>
-                        <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname">
-                        <label for="lname">LAST NAME</label>
-                        <input type="text" id="lname">
+                        <div>
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" id="fname">
+                        </div>
+                        <div>
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" id="lname">
+                        </div>
                     </div>
                     
                     <div>
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email">
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="text" id="phone">
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="text" id="phone" placeholder="0400000000" maxlength="10" minlength="10" pattern="(\{d10})">
+                        </div>
                     </div>
 
                     <div>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password">
-                        <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm_password">
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div>
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password">
+                        </div>
                     </div>
             </div>
             <div class="bottom"><button class="create_account_button">Create Account</button><p>Already have an account? <a href="">Log in</a></p></div>
