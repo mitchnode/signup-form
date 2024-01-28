@@ -22,6 +22,7 @@
 .container {
     display: flex;
     height: 100vh;
+    font-size: 1vw;
 }
 
 .leftpanel {
@@ -32,13 +33,14 @@
     justify-content: space-between;
     text-align: center;
     color: var(--bg-colour);
+    width: 40em;
 }
 
 .topleft {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 50vh;
+    height: 40vh;
 }
 
 .bottomleft {
@@ -51,14 +53,14 @@
 }
 
 .logo {
-    height: 2rem;
+    height: 2em;
     padding-right: 5px;
     margin: 1rem 0 1rem 2rem;
 }
 
 .title {
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
     color: var(--fg-colour);
     background-color: var(--shadow);
     display: flex;
@@ -76,8 +78,10 @@
     background-color: var(--shadow);
 }
 
+
+
 .rightpanel {
-    flex-basis: 1;
+    width: 60em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -85,44 +89,52 @@
 }
 .top {
     font-weight: bold;
-    font-size: 0.85rem;
-    margin: 5rem 4rem 1.5rem 2rem;
+    font-size: 1.7em;
+    margin: 5em 4em 1.5em 2em;
 }
 
 .top p {
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 .middle {
     box-shadow: 0px 0px 10px 0px var(--shadow);
     background-color: var(--fg-colour);
-    padding: 1rem 2rem;
+    padding: 1em 2em;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1em;
+    height: 16vw;
+}
+
+.middle h4 {
+    margin: 0 1em;
 }
 
 .middle>form>div{
     display: flex;
-    gap: 2rem;
-    padding: 0.5rem 0;
+    gap: 2em;
+    padding: 0.5em 0;
+    margin: 0 1em;
 }
 
 .middle label {
-    font-size: 0.6rem;
+    font-size: 0.6em;
     display: block;
-    line-height: 0.8;
+    line-height: 1;
     font-weight: 600;
 }
 
 .middle input {
     border: 1px solid var(--input-border);
-    padding: 2px 5px;
-    border-radius: 3px;
+    padding: 0.2em 0.5em;
+    border-radius: 0.2em;
+    height: 1.5vw;
+    width: 25vw;
 }
 
-.middle input:invalid {
-    border: 1px solid var(--error-border);
+.middle input:invalid:focus {
+    border-color: var(--error-border);
 }
 
 .middle input:focus {
@@ -131,23 +143,29 @@
     box-shadow: 0 0 5px 0 var(--shadow);
 }
 
-.rightpanel button {
-    width: 8rem;
-    margin: 1rem 2rem;
+.password_error {
+    color: var(--error-border);
+    font-size: 0.6em;
+}
+
+.bottom {
+    margin: 0 3em;
+}
+
+#create_account_button {
+    width: 10em;
+    margin: 2em 0;
     background-color: var(--base-colour);
     color: var(--bg-colour);
     border: 0;
-    border-radius: 5px;
-    padding: 0.6rem 1.2rem;
-    font-size: 0.65rem;
+    border-radius: 0.5em;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
     font-weight: 600;
     box-shadow: 0 0 2px 0 var(--shadow);
     cursor:pointer;
 }
 
-
-
 .bottom p {
-    margin: 0 2rem;
-    font-size: 0.7rem;
+    font-size: 0.7em;
 }
